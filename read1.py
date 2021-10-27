@@ -17,3 +17,17 @@ print(data[1000000 - 1]) #這會印出清單中最後一筆留
 
 print(d) #這也會印出清單中最後一筆留
 
+new = []
+for d in data:
+	if len(d) > 100:
+		new.append(d)
+print("總共有", len(new), "筆留言長度大於100")
+print(new[0])
+
+good = []
+for d in data:
+	if "Pauline" in d:
+		good.append(d)
+print("總共有", len(good), "筆留言含有Pauline這個名字")
+print(good[0])
+print(good[1])
